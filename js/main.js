@@ -11,10 +11,8 @@
 
 	$(window).scroll(function() {
 		if ($(this).scrollTop() > 775) {
-			console.log("Ok able to find");
 			var element = document.getElementById("menu-bar");
 			element.classList.add("menuScrolling");
-			console.log(element.childNodes);
 			element.childNodes[1].classList.add("menuScrollingSpan");
 			document.getElementById("lastLi").classList.add("menuScrollingLi");
 		}
