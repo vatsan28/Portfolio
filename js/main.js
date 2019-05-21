@@ -4,6 +4,16 @@
  *
  * ------------------------------------------------------------------- 
  */ 
+const getAge = (dateString) => {
+    var today = new Date();
+    var birthDate = new Date(dateString);
+    var age = today.getFullYear() - birthDate.getFullYear();
+    var m = today.getMonth() - birthDate.getMonth();
+    if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+        age--;
+    }
+    return age;
+}
 
 (function($) {
 
@@ -33,8 +43,25 @@
     	$("#loader").fadeOut("slow", function(){
 
         // will fade out the whole DIV that covers the website.
-        $("#preloader").delay(300).fadeOut("slow");
+		$("#preloader").delay(300).fadeOut("slow");
 
+		var mediaSize = window.matchMedia("(max-width: 768px)")
+		console.log(mediaSize);
+		var mobileHeader = "none";
+		var nonMobileHeader = "none";
+		if (mediaSize.matches) {
+			mobileHeader = "block";
+			nonMobileHeader = "none";
+		} else {
+			mobileHeader = "none";
+			nonMobileHeader = "block";
+		}
+		console.log(mobileHeader, nonMobileHeader);
+		document.getElementById("mobileHeader").style.display = mobileHeader;
+		document.getElementById("nonMobileHeader").style.display = nonMobileHeader;
+
+		document.getElementById("age").innerHTML = getAge("1992/08/28")+" yrs old";
+		
       });       
 
   	})

@@ -1306,11 +1306,12 @@ header .menu-bar {
 	height: auto;
 	text-align: left;
 	padding: 0;
+	width: 100%;
 }
 .main-navigation li a {
 	display: block;
 	color: #FFFFFF;
-	width: auto;
+	width: 100%;
 	padding: 15px 0;
 	line-height: 16px;
 	border: none;
@@ -1321,7 +1322,7 @@ header .menu-bar {
 }
 .main-navigation li.current > a {
 	background: none;
-	color: #FF0077;
+	color: rgb(39, 166, 240);
 }
 
 /**
@@ -1331,24 +1332,25 @@ header .menu-bar {
  */
 @media only screen and (max-width:1024px) {
 	header .top-bar {
-		left: 60px;
+		left: 0px;
+		width: 100%;
 	}
 }
-@media only screen and (max-width:768px) {
+/* @media only screen and (max-width:768px) {
 	header .top-bar {
-		left: 50px;
+		left: 0px;
 	}
 }
 @media only screen and (max-width:600px) {
 	header .top-bar {
-		left: 35px;
+		left: 5px;
 	}
 }
 @media only screen and (max-width:400px) {
 	header .top-bar {
-		left: 25px;
+		left: 5px;
 	}
-}
+} */
 
 
 /** 
@@ -1430,7 +1432,7 @@ header .menu-bar {
 	color: rgba(255, 255, 255, 0.3);
 }
 .intro-content .intro-position span:first-child::before {
-	content: "|";
+	/* content: "|"; */
 	text-align: center;
 	display: inline-block;
 	padding: 0 14px 0 8px;
@@ -2258,6 +2260,7 @@ header .menu-bar {
 #stats .stat {
 	border-left: 1px solid rgba(255, 255, 255, 0.12);
 	min-height: 17.4rem;
+	width: 25%;
 }
 #stats .stat:first-child {
 	border: none;
