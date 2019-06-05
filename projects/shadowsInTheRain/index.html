@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<!-- saved from url=(0045)http://gautamkrishnan.com/projects/smartdoor/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+		<title>Shadows in the Rain</title>
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" type="text/css" href="css/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+		<!-- <script type="text/javascript" src="js/less.js"></script> -->
+	</head>
+	<body cz-shortcut-listen="true">
+		<div class="outer-wrapper" id="top">
+			<div class="heading">Shadows in the Rain
+				<div class="tagline">An application that visualizes hurricanes.</div>
+			</div>
+			<div class="menu">
+				<div class="menu-inner">
+					<ul class="menu-list">
+						<li id="toOverview"><div class="underline">Overview</div></li>
+						<li id="toCritique"><div class="underline">How to</div></li>
+						<li id="toAudience"><div class="underline">Source</div></li>
+						<li id="toAnalysis"><div class="underline">Findings</div></li>
+						<li id="toDemo"><div class="underline">Team</div></li>
+						<li id="toCritique"><a href="http://gautamkrishnan.com/hurricanes/app/" target="_blank"><div class="app-button">Application</div></a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="content first" id="overview">
+				<div class="content-inner">
+					<div class="content-holder">
+						<h1>Overview</h1>
+						<p>Shadows in the Rain is a web application that plots and plays back hurricanes from 1800s to 2010 in Atlantic and Pacific oceans on a map. It also plots graphs for hurricanes in Atlantic vs Pacific oceans based on wind speed, pressure, etc. You can use the controls to filter the hurricanes based on time, wind speed, pressure, etc. The hurricane playback can be paused, and the playback speed can be increased or decreased.</p>
+					</div>
+					<div class="content-holder">
+						<img src="images/hurricane_screenshot.png" style="width: 100%">
+					</div>
+					<div class="content-holder" style="margin-top: 25px; text-align: center; width: 100%">
+						An overview of the application showing the plotted hurricanes and their corresponding graphs.
+					</div>
+					<div class="content-holder">
+						<h2 style="margin-top: 40px; margin-bottom: 30px">Softwares/libraries used:</h2>
+						<ul>
+							<li>1. HTML, CSS and Javascript - The regular stuff we use to build awesome web applications.</li>
+							<li>2. <a href="http://http//d3js.org/">D3.js</a> - A Javascript library to visualize data.</li>
+							<li>3. <a href="http://leafletjs.com/">Leaflet.js</a> - A Javascript library for building interactive maps.</li>
+							<li>4. <a href="https://www.mapbox.com/">Mapbox.js</a> - A Javascript library that provides layers that can be used on the map.</li>
+							<li>5. <a href="https://lesscss.org/">LESS CSS</a> - A Javascript library to write efficient CSS.</li>
+							<li>6. <a href="https://thenounproject.com/">The Noun Project</a> - For a few icons in SVG format that we customized.</li>
+							<li>7. <a href="https://www.apachefriends.org/index.html">XAMPP</a> - A free, easy to install Apache distribution containing MariaDB, PHP, and Perl.</li>
+							<li>8. PHP, MySQL, PHPMyAdmin</li>
+							<li>9. <a href="https://www.mysql.com/">NYTimes Top Stories API</a> - The world's most popular open source database.</li>
+							<li>10. <a href="https://www.sketchapp.com/">Sketch</a> - The #1 tool for UI and Wireframing.</li>
+							<li>11. <a href="http://brackets.io/">Brackets</a> - Code editor.</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="content" id="critique">
+				<div class="content-inner">
+					<div class="content-holder">
+						<h1 style="margin-bottom: 40px">How to Use</h1>
+						<H2>Controls:</H2>
+						<ul>
+							<li>The controls menu is where the app lets user choose various option on which a list of hurricanes is plotted on the map.</li>
+							<li>1. The side bar lets user select hurricanes from central pacific, north east pacific ocean, atlantic ocean or all of them.</li>
+							<li>2. After selecting the oceans the app also lets user select top 5, top 10 overall hurricanes.</li>
+							<li>3. Then comes the list of hurricanes populated according to the users choice, Order By option allows the user to order the list alphabetically, chronological order, maximum wind speed and minimum pressure.</li>
+							<li>4. The "Filter By" option lets user refine the list of hurricanes based on conditions like maximum wind speed, minimum pressure, time as of particular year, season, date, day and date range.</li>
+							<li>5. The side bar has an order by option which allows the user to order the list (like alphabetically) of hurricanes fetched.</li>
+						</ul>
+					</div>
+					<div class="content-holder" style="margin-bottom: 20px;">
+						<img src="images/10.png" class="center-auto-image">
+					</div>
+					<div class="content-holder" style="margin-bottom: 20px;">
+						<img src="images/80.png" class="center-auto-image">
+					</div>
+					<div class="content-holder" style="margin-bottom: 40px;">
+						<img src="images/50.png" class="center-auto-image">
+					</div>
+					<div class="content-holder">
+						<H2>Parameters:</H2>
+						<ul>
+							<li>Once a selection is made and the update button is clicked, the app displays all hurricanes on the map. The following are the parameters represented:</li>
+							<li>1. The color depicts the wind speed categorized based on Saffir Simpson scale.</li>
+							<li>2. The circles depict quadrophonic wind radii.</li>
+							<li>3. Pressure is depicted using line type - dashed or straight.</li>
+							<li>4. All these layers can be individually selected or unselected.</li>
+							<li>5. To see a different set of hurricanes, make a selection in the left panel and hit update.</li>
+							<li>6. The list box will get updated according to the most recent selection made.</li>
+						</ul>
+					</div>
+					<div class="content-holder" style="margin-bottom: 20px;">
+						<img src="images/pressure.png" class="center-auto-image">
+					</div>
+					<div class="content-holder" style="margin-bottom: 40px;">
+						<img src="images/hurrtype.png" class="center-auto-image">
+					</div>
+					<div class="content-holder">
+						<H2>Playing back entire hurricane Seasons:</H2>
+						<ul>
+							<li>1. The app allows user to playback an entire season on the map.</li>
+							<li>2. The hurricanes start showing up on the map the day they were formed and trace the path until it cease to exist.</li>
+							<li>3. Play,pause, fast forward controls have been overlayed on the map and also a progress bar shows the progress of the playback.</li>
+							<li>4. Apart from allowing the user to playback the hurricane, the user can also pause at a particular point.</li>
+							<li>5. Changing underlaying map representation: At any point of time user can choose to change the underlying map representation. On the top right corner of the map is a small icon , which on clicking allows the user to change the underlying map representation. This is useful while viewing different kinds of data.</li>
+							<li>Graphs: Apart from plotting the hurricanes on the map, the app also let's user view data as graphs. There as several graphs that show various types of data.</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="content" id="audience">
+				<div class="content-inner">
+					<div class="content-holder" style="margin-bottom: 20px;">
+						<h1>Source Code, Installation and Data</h1>
+						<h2>1. Setting up the server:</h2>
+						<ul>
+							<li>1. Download the source code which contains the .php, .js, html and the sql data for the hurricanes.</li>
+							<li>2. Install wamp to use as the local server for running the application in the local system.</li>
+							<li>3. Copy the source code folder into C:\wamp\www folder which makes the application accessible from the local server setup by wamp.</li>
+							<li>4. The source code folder pasted can be tested by opening localhost in your browser.</li>
+							<li>5. Setup the connection strings in the php files as per your local server which can be found at C:\wamp\apps\phpmyadmin4.1.14\config.inc.php.</li>
+						</ul>
+					</div>
+					<div class="content-holder" style="margin-bottom: 20px;">
+						<h2>2. Setting up the database:</h2>
+						<ul>
+							<li>1. Open localhost/phpmyadmin to upload the sql database.</li>
+							<li>2. Click on export and upload the hurricanes.sql file provided in the folder.</li>
+							<li>3. Note down the database name to be added in the php files.</li>
+							<li>4. Open a browser and type http://localhost/&lt;your-folder-name&gt;/ to view the application.</li>
+						</ul>
+					</div>
+					<div class="content-holder">
+						<h2>3. Data used:</h2>
+						<ul>
+							<li><a href="http://www.nhc.noaa.gov/data/#hurdat">Download Hurricane data for Atlantic and Pacific Oceans</a></li>
+							<li><a href="http://www.aoml.noaa.gov/hrd/hurdat/hurdat2-format-may2015.pdf">Data format specification</a></li>
+							<li>To clean the data for both Atlantic and Pacific oceans, we opnened them in a excel file.</li>
+						</ul>
+					</div>
+					<div class="content-holder" style="margin-bottom: 20px;">
+						<img src="images/Picture1.png" class="center-auto-image">
+					</div>
+					<div class="content-holder">
+						<ul>
+							<li>The initial raw data had no standard format. No column names and consistent data was missing for each hurricane.</li>
+							<li>Initial formatting: All values were given a column header to be able to locate and access them with those column names.</li>
+						</ul>
+					</div>
+					<div class="content-holder" style="margin-bottom: 20px;">
+						<img src="images/Picture2.png" class="center-auto-image">
+					</div>
+					<div class="content-holder" style="margin-bottom: 40px;">
+						<ul>
+							<li>Extra columns for the name and Id were added to each coordinate of the hurricanes.</li>
+							<li>Blank rows were removed to make the data uniform.</li>
+						</ul>
+					</div>
+					<div class="content-holder" style="margin-bottom: 20px;">
+						<h2>4. Data cleaning:</h2>
+						<ul>
+							<li>1. The latitude and longitude values were made integers to enable plotting coordinates on the map.</li>
+							<li>2. Extra 'N','S','W' and 'E' values were removed from these two columns.</li>
+							<li>3. The unknown values in pressure columns were changed to a constant value greater than the maximum value to be able to identify the actual minimum value of pressure among all the hurricanes.</li>
+							<li>4. A total of 1258 hurricanes(1102-Atlantic and 156-Pacific) were unnamed. These hurricanes were named with their respective hid. This makes it simple to identify these hurricanes.</li>
+							<li>5. All the hurricane names were also appended with the year to make the names consistent with the unnamed hurricanes.</li>
+						</ul>
+					</div>
+					<div class="content-holder">
+						<h2>5. Tables:</h2>
+						<ul>
+							<li>The entire data was setup in 3 tables:</li>
+							<li>1. Pacific</li>
+							<li>2. Atlantic</li>
+							<li>3. Summary (Each column in the Summary table is used as index for the actual data in Atlantic and Pacific tables).</li>
+						</ul>
+					</div>
+					<div class="content-holder">
+						<img src="images/Picture3.png" style="width: 100%">
+					</div>
+					<div class="content-holder" style="margin-top: 15px; text-align: center; line-height: 25px">
+						The Summary table consists of the following columns to provide ease of access to obtain the actual coordinates of the hurricanes.
+					</div>
+					<div class="content-holder">
+						<img src="images/Picture4.png" style="margin-top: 45px; width: 100%">
+					</div>
+					<div class="content-holder" style="margin-top: 15px; text-align: center; line-height: 25px">
+						Structure of the Atlantic Table.
+					</div>
+					<div class="content-holder">
+						<img src="images/Picture5.png" style="margin-top: 45px; width: 100%">
+					</div>
+					<div class="content-holder" style="margin-top: 15px; text-align: center; line-height: 25px">
+						Structure of the Summary Table.
+					</div>
+				</div>
+			</div>
+			<div class="content" id="analysis">
+				<div class="content-inner">
+					<div class="content-holder">
+						<h1>Key Findings and Scope of the Application</h1>
+						<h2 style="margin-top: 20px">Findings</h2>
+						<ul>
+							<li>1. The radii of damage caused by the hurricanes at each position is as large as a city.</li>
+							<li>2. Most of the hurricanes donot make land fall.</li>
+							<li>3. Many hurricanes start and end as a tropical depression.</li>
+							<li>4. The extent of 34knot wind speed radii is more than the extent of 64 knots wind speed radii. This was observed when the quadrophinic data was plotted onto the map.</li>
+						</ul>
+						<h2  style="margin-top: 20px">Scope</h2>
+						<ul>
+							<li>After viewing the projects that were presented by the other teams in class, the following points impressed us, which made us think that they would be good to have in our project and would enrich the features that we already have.</li>
+							<li>1. Show the current wind speed and compare it with the max wind speed of a particular hurricane at each point.</li>
+							<li>2. Represent the wind speed (currently in knots) in other units that are user friendly (like kms and miles per hour).</li>
+							<li>3. Show if the hurricane was in Atlantic or Pacific (in the info box below).</li>
+							<li>4. Allow the user to jump to a particular hurricane in the hurricane list box by providing a search box on the top. This search box should accept hurricane names, years and so on.</li>
+							<li>5. The hurricane seasons (currently mentioned as only Atlantic or Pacific seasons) must also show the months when they are active.</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			 <div class="content" id="demo">
+				<div class="content-inner">
+					<div class="content-holder">
+						<h1>Team</h1>
+						<div class="image-holder">
+							<div class="image-single">
+								<img src="images/gautam.jpg">
+								<div class="about-name">Gautam Krishnan</div>
+							</div>
+							<div class="image-single">
+								<img src="images/vivek1.jpg">
+								<div class="about-name">Vivek Krishnakumar</div>
+							</div>
+							<div class="image-single">
+								<img src="images/sumanth.jpg">
+								<div class="about-name">Sumanth Reddy Pandugula</div>
+							</div>
+							<div class="image-single">
+								<img src="images/watson1.jpg">
+								<div class="about-name">Srivatsan Muralidharan</div>
+							</div>
+						</div>
+					</div>
+					<div class="content-holder" style="margin-top: 50px">
+						<h2>Demo:</h2>
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/b-qnzFJrcAw" frameborder="0" allowfullscreen></iframe>
+					</div>
+				</div>
+			</div>
+			<div class="scrollDiv">
+				<div class="scrollTop"></div>
+			</div>
+		</div>
+		<script type="text/javascript" src="js/script.js"></script>
+	
+</body></html>

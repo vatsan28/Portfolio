@@ -1,0 +1,254 @@
+body{
+	background-color: #fff;
+	font-family: 'Open Sans', sans-serif;
+}
+a, a:visited, a:active, a:focus{
+	text-decoration: none;
+	color: inherit;
+}
+br{
+	height: 20px;
+	width: 100%;
+	float: left;
+	display: block;
+}
+.link{
+	color: @primaryColor !important;
+	cursor: pointer;
+	text-decoration: underline;
+}
+/* Variable declarations */
+.box-sized{
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+.left{ float: left; }
+.right{ float: right; }
+*:focus{
+	outline: none;
+}
+@primaryColor: #1BBC9B;
+
+.heading{
+	width: 100%;
+	font-size: 48px;
+	text-align: center;
+	margin-top: 50px;
+	font-weight: 300;
+	.left;
+	word-spacing: 7px;
+	.tagline{
+		width: 100%;
+		margin-top: 25px;
+		font-size: 24px;
+		text-align: center;
+		letter-spacing: 0.005em;
+		.left;
+		word-spacing: 1px;
+	}
+}
+.menu{
+	width: 100%;
+	.left;
+	margin-top: 50px;
+	.menu-inner{
+		width: 840px;
+		margin: 0 auto;
+		height: 40px;
+		border-radius: 20px;
+
+		.menu-list{
+			width: 100%;
+			.left;
+			li{
+				.left;
+				width: 16.6%;
+				text-align: center;
+				text-transform: uppercase;
+				margin-top: 10px;
+
+				.underline{
+					width: 90px;
+				    border-bottom: 2px solid @primaryColor;
+				    padding-bottom: 10px;
+				    margin: 0 auto;
+				    cursor: pointer;
+				}
+				.app-button{
+					width: 80%;
+				    height: 27px;
+				    background-color: @primaryColor;
+				    margin-top: -10px;
+				    padding-top: 13px;
+				    margin-left: auto;
+				    margin-right: auto;
+				    color: #FFF;
+				    border-radius: 20px;
+				    font-size: 14px;
+				    cursor: pointer;
+				}
+			}
+		}
+	}
+}
+.outer-wrapper{
+	width: 1000px;
+    margin: 0 auto;
+    position: relative;
+}
+.content{
+	.left;
+	width: 100%;
+	padding-top: 60px;
+	padding-left: 30px;
+	padding-bottom: 30px;
+	.box-sized;
+
+	&.first{
+		padding-top: 100px;
+	}
+	.content-inner{
+		width: 840px;
+		margin: 0 auto;
+
+		.content-holder{
+			.left;
+			width: 93%;
+			margin-left: 25px;
+			h1{
+				font-size: 30px;
+				font-weight: 300;
+				.left;
+				width: 100%;
+				margin-bottom: 20px;
+			}
+			h2{
+				width: 100%;
+				font-weight: 300;
+				.left;
+				font-size: 20px;
+				text-transform: uppercase;
+				margin-bottom: 20px;
+			}
+			img{
+				width: 360px;
+				float: left;
+			}
+			p{
+			    font-size: 16px;
+			    line-height: 27px;
+			    float: left;
+			    width: 100%;
+			    font-weight: 400;
+			    margin-bottom: 18px;
+			}
+			ul {
+				font-size: 16px;
+			    line-height: 27px;
+			    float: left;
+			    width: 100%;
+			    font-weight: 400;
+			    margin-bottom: 18px;
+				li{
+			    	margin-bottom: 10px;
+			    	width: 100%;
+			    	a{
+			    		color: @primaryColor;
+			    		text-decoration: underline;
+			    	}
+			    }
+			}
+			.half{
+				.left;
+				width: 50%;
+				p{
+					width: 90%;
+				}
+			}
+			.half2{
+				img{
+					display: block;
+					margin: 0 auto;
+				}
+				p{
+					width: 100%;
+				}
+			}
+		}
+	}
+}
+.img1{
+	height: 332px;
+}
+.img2{
+	height: 486px;
+}
+.img3{
+	height: 332px;
+}
+.img4{
+	height: 500px;
+}
+.img5{
+	height: 420px;
+	margin-top: 70px !important;
+}
+.img6{
+	height: 740px;
+}
+.img7{
+	width: 366px;
+	height: 900px;
+}
+.scrollDiv{
+	position: fixed;
+    bottom: 10px;
+    width: 1050px;
+    height: 48px;
+}
+.scrollTop{
+	width: 48px;
+	height: 48px;
+	background: url('../images/top.png');
+	position: absolute;
+	right: 0;
+}
+.image-holder{
+	width: 100%;
+	margin-top: 40px;
+	.left;
+
+	.image-single{
+		width: 25%;
+		.left;
+
+		img{
+			width: 150px !important;
+		    height: 150px !important;
+		    float: none !important;
+		    border-radius: 50%;
+		    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+		    margin: 0 auto;
+		    display: block;
+		}
+		.about-name{
+			text-align: center;
+			margin-top: 25px;
+			font-weight: 400;
+		}
+		.features{
+			color: #777;
+			text-align: center;
+			line-height: 22px;
+			margin-top: 20px;
+		}
+	}
+}
+.center-auto-image{
+	width: auto !important;
+    float: none !important;
+    margin: 0 auto;
+    display: block;
+    max-width: 100%;
+}

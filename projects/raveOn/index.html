@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<!-- saved from url=(0045)http://gautamkrishnan.com/projects/smartdoor/ -->
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+		<title>Rave On</title>
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" type="text/css" href="./css/reset.css">
+		<link rel="stylesheet" type="text/css" href="./css/style.css">
+		<script type="text/javascript" src="./js/jquery-1.8.2.min.js"></script>
+		<script type="text/javascript" src="./js/less.js"></script>
+	</head>
+	<body cz-shortcut-listen="true">
+		<div class="outer-wrapper" id="top">
+			<div class="heading">Rave On
+				<div class="tagline">Meet your taste for music!</div>
+			</div>
+			<div class="menu">
+				<div class="menu-inner">
+					<ul class="menu-list">
+						<li id="toOverview"><div class="underline">Overview</div></li>
+						<li id="toCritique"><div class="underline">How to</div></li>
+						<li id="toAudience"><div class="underline">Source</div></li>
+						<li id="toAnalysis"><div class="underline">Findings</div></li>
+						<li id="toDemo"><div class="underline">Team</div></li>
+					</ul>
+				</div>
+			</div>
+			<div class="content first" id="overview">
+				<div class="content-inner">
+					<div class="content-holder">
+						<h1>Overview</h1>
+						<p>Rave On enables two users to compare similarity or differences in taste of music between them. Two users can individually select artists and genres and add them their "My Mix". This also adds their selections to a common area where the users are presented with a visualized version of their taste in music, that allows for comparision.</p>
+						<p>This application was built to be used on a mega touchscreen display of 8196px x 2188px resolution at the Electronic Visualization Laboratory at the University of Illinois at Chicago.</p>
+					</div>
+					<div class="content-holder">
+						<img src="./images/full.jpg" style="width: 100%">
+					</div>
+					<div class="content-holder" style="margin-top: 25px; text-align: center; width: 100%">
+						The two user panels on the sides, and a shared common area in the center.
+					</div>
+					<div class="separator"></div>
+					<div class="content-holder">
+						<h2 style="margin-top: 40px; margin-bottom: 30px">Softwares/libraries used:</h2>
+						<ul>
+							<li>1. HTML, CSS and Javascript - The regular stuff we use to build awesome web applications.</li>
+							<li>2. <a href="http://http//d3js.org/">D3.js</a> - A Javascript library to visualize data.</li>
+							<li>3. <a href="http://leafletjs.com/">Leaflet.js</a> - A Javascript library for building interactive maps.</li>
+							<li>4. <a href="https://www.mapbox.com/">Mapbox.js</a> - A Javascript library that provides layers that can be used on the map.</li>
+							<li>5. <a href="https://lesscss.org/">LESS CSS</a> - A Javascript library to write efficient CSS.</li>
+							<li>6. <a href="https://www.apachefriends.org/index.html">XAMPP</a> - A free, easy to install Apache distribution containing MariaDB, PHP, and Perl.</li>
+							<li>7. PHP, MySQL, PHPMyAdmin</li>
+							<li>8. <a href="https://www.sketchapp.com/">Sketch</a> - The #1 tool for UI and Wireframing.</li>
+							<li>9. <a href="http://brackets.io/">Brackets</a> - Code editor.</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="content" id="critique">
+				<div class="content-inner">
+					<div class="content-holder">
+						<h1 style="margin-bottom: 40px">How to Use</h1>
+						<div class="separator"></div>
+						<H2>Common Area:</H2>
+						<ul>
+							<li>The common area contains the Map, Force Directed Graph (FDG) and the Timeline sections.</li>
+							<li><b>1. Map:</b></li>
+							<li>a) The markers on the map represent where the artists are from.</li>
+							<li>b) The markers on clicking, will open a pop up giving more information about the artist.</li>
+							<li>c) The color code around the markers correspond to which of the two users added the arist to their mix.</li>
+							<li><b>2. Force Directed Graph (FDG):</b></li>
+							<li>a) The nodes on the FDG represents artists. A link between two or more artists indicates that the artists are related by their genre or simply similar artists.</li>
+							<li>b) The clusters seen on the FDG are artists belonging to same genres.</li>
+							<li>c) The clusters as well as the individual nodes can be clicked and dragged to reposition, which facilitates easier comparision.</li>
+							<li><b>3. Timeline:</b></li>
+							<li>a) The Timeline has two tabs: Artists and Genres.</li>
+							<li>b) The genre timeline is a streamgraph that shows the popularity of the genre from year 1900 to date, and the thickness of the stream is a measure of the popularity of a particular genre.</li>
+							<li>c) The artist timeline is also a streamgraph that shows the 'hottness' of the artist in their entire music career, and the thickness of a stream is a measure of the 'hottness' for the particular artist. The stream starts and ends according to the artist's career in music, this gives more insight into artists from different decades.
+						</ul>
+						<div class="content-holder" style="margin-bottom: 20px;">
+							<img src="./images/all-viz-together.png" class="center-auto-image">
+						</div>
+						<div class="content-holder" style="margin-top: 10px; text-align: center; width: 100%; margin-bottom: 40px">
+							<b>Top</b>: Timeline shown via Steamgraph; <b>Bottom-Left</b>: Map with artists; <b>Bottom-Right</b>: Force Directed Graph
+						</div>
+						<div class="separator"></div>
+						<H2>Panels:</H2>
+						<ul>
+							<li>The two users get one panel each, with one at the left extreme and one at the right.</li>
+							<li>1. Each of the two individuals can pick from one of the 10 available colors they want and all their contribution to the shared space change to that color.</li>
+							<li>2. Users can type their name at the top of their panel for reference; This also helps in taking screenshots and saving for future.</li>
+							<li>3. Artist or genres can be added individually. If one cannot remember arists/genres right away, they can choose to see the top 10 by decade.</li>
+							<li>4. One can drill down further by searching for an artist, looking at their generes, and selecting one of those generes to view other artists in them.</li>
+							<li>5. Once an artist/genre selection has been made, the user can select to see results by genre or by artist.</li>
+							<li>6. Autocomplete suggestions are offered as one starts to type into the text box.</li>
+							<li>7. When an item is selected and "Add to my Mix" is clicked, the selected item gets added to the "My Mix" section below.</li>
+						</ul>
+					</div>
+					<div class="content-holder" style="margin-bottom: 20px;">
+						<img src="./images/viz.jpg" class="center-auto-image">
+					</div>
+				</div>
+			</div>
+			<div class="content" id="audience">
+				<div class="content-inner">
+					<div class="content-holder" style="margin-bottom: 20px;">
+						<h1>Source Code, Installation and Data</h1>
+						<div class="separator"></div>
+						<h2>1. Setting up the server:</h2>
+						<ul>
+							<li>1. <a href="https://github.com/gkthegr8/raveon">Download</a> the source code which contains the .js, html and the image data for the artists and genres.</li>
+							<li>2. Install WAMP to use as the local server for running the application in the local system.</li>
+							<li>3. Copy the source code folder into C:\wamp\www folder which makes the application accessible from the local server setup by wamp.</li>
+							<li>4. The source code folder pasted can be tested by opening localhost in your browser.</li>
+						</ul>
+					</div>
+					<div class="content-holder" style="margin-bottom: 20px;">
+						<h2>2. Data</h2>
+						<ul>
+							<li>The main data source for this application is <a href="http://developer.echonest.com/docs/v4/index.html#overview">The Echonest API</a>. All data was fetched using the authorization provided by the API to use their database.</li>
+							<li>We also used the <a href="https://developer.spotify.com/documentation/web-api/">Spotify API</a> was also used to fetch images for artists for representing them on our visualizations.</li>
+						</ul>
+					</div>
+					<div class="content-holder">
+						<h2>3. Understanding the Data</h2>
+						<ul>
+							<li>1. The data was split into Artist, Genres, Song and Playlist methods. To use the data initially, we had to decide upon what data points we needed for the interactions and various features used in the application.</li>
+							<li>2. To avoid redundant calls to the API, we analyzed what data is static throughout, and we created static data points for this.</li>
+						</ul>
+						<div class="content-holder" style="margin-bottom: 20px; margin-top: 80px">
+							<img src="./images/echonestmethods.png" class="center-auto-image">
+						</div>
+						<div class="content-holder" style="margin-top: 0px; text-align: center; width: 100%; margin-bottom: 80px">
+							The Echonest API.
+						</div>
+						<ul>
+							<li>3. Some such data points were: Top 10 artists for each decade, top 10 genres for each decade, artist images for the top 10 in each decade, the genre list and their scores for the top 10 of each decade.</li>
+							<li>4. Such static data points decision were essential to reduce the eventual latency that may be involved with each call.</li>
+							<li>5. The next set of data needed was a set of data that is fetched based on a particular choice made by the user.</li>
+							<li>6. Some such dynamic data points were: Getting a range of artist data for the map, performance of the selected genre over the years, identifying the relation between artists on the Force Directed Graph.</li>
+						</ul>
+					</div>
+						<div class="content-holder" style="margin-bottom: 20px; border: 1px solid #999999; margin-top: 80px">
+							<img src="./images/staticData1.png" class="center-auto-image">
+						</div>
+						<div class="content-holder" style="margin-bottom: 20px; border: 1px solid #999999;">
+							<img src="./images/staticImages.png" class="center-auto-image">
+						</div>
+						<div class="content-holder" style="margin-bottom: 20px; border: 1px solid #999999;">
+							<img src="./images/staticFdg.png" class="center-auto-image">
+						</div>
+						<div class="content-holder" style="margin-top: 0px; text-align: center; width: 100%; margin-bottom: 40px">
+							All the static data (from top): 1. Top 10 per decade, 2. Images for top 10 in each decade, 3. For the initial FDG.
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="content" id="analysis">
+				<div class="content-inner">
+					<div class="content-holder">
+						<h1>Key Findings and Scope of the Application</h1>
+						<h2 style="margin-top: 20px">Findings</h2>
+						<ul>
+							<li>1. Most of the data is from the US and UK, there is little or no data from the continents like Africa, this can be seen in the top 10 artists in each decade representation on the map.</li>
+							<li>2. From within a short span, Rock was dominating and was most popular genre from the 1950's.</li>
+							<li>3. Recent artists like Justin Beiber have the highest "hottness".</li>
+							<li>4. Older genres which made to the top were popular by just one artist. On the other hand, more popular genres had more number of artists.</li>
+							<li>5. Many musicians made to the top 10 from India in the mid 1960s and 1970s, but in the recent decades it is the artists from the US and UK hitting the top of the charts.</li>
+							<li>6. Users who were teens had more connections on the force directed graph, as they were likely to pick artists from genres like pop, teen pop and edm etc.</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			 <div class="content" id="demo">
+				<div class="content-inner">
+					<div class="content-holder">
+						<h1>Team</h1>
+						<div class="image-holder">
+							<div class="image-single">
+								<img src="./images/gautam.jpg">
+								<div class="about-name">Gautam Krishnan</div>
+							</div>
+							<div class="image-single">
+								<img src="./images/vivek1.jpg">
+								<div class="about-name">Vivek Krishnakumar</div>
+							</div>
+							<div class="image-single">
+								<img src="./images/sumanth.jpg">
+								<div class="about-name">Sumanth Reddy Pandugula</div>
+							</div>
+							<div class="image-single">
+								<img src="./images/watson1.jpg">
+								<div class="about-name">Srivatsan Muralidharan</div>
+							</div>
+						</div>
+					</div>
+					<div class="content-holder" style="margin-top: 50px">
+						<h2>Demo:</h2>
+						<iframe width="100%" height="500" src="https://www.youtube.com/embed/gXQqvTjWSv4" frameborder="0" allowfullscreen></iframe>
+					</div>
+				</div>
+			</div>
+			<div class="content">
+				<div class="content-inner">
+					<div class="content-holder" style="line-height: 2; color: rgba(0,0,0,0.54)">
+					Made with loads of &hearts; and sweat for CS424 - Visualization and Visual Analytics, at University of Illinois at Chicago. Thanks to Prof. <a href=>Andrew Johnson</a>.
+					</div>
+				</div>
+			</div>
+			<div class="scrollDiv">
+				<div class="scrollTop"></div>
+			</div>
+		<script type="text/javascript" src="./js/script.js"></script>
+
+</body></html>
